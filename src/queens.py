@@ -3,7 +3,7 @@ def solve_n_queens(n):
     board = ['.' * n for _ in range(n)]
 
     def backtrack(row, cols, diag1, diag2, path):
-        if row == n-1:
+        if row == n:
             result.append(path.copy())
             return
         for col in range(n):
